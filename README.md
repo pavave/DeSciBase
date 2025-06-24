@@ -25,3 +25,28 @@ Our goal is to create an open, censorship-resistant, and community-driven ecosys
 3. Install dependencies:  
    ```bash
    npm install
+4. Run frontend:
+   ```bash
+   npm run dev
+5. Open http://localhost:5173 in your browser
+   
+## Roadmap
+
+MVP smart contracts for publishing and liking papers
+
+Frontend with IPFS upload and wallet integration
+
+On-chain comments and moderation tools
+
+DAO governance and tokenomics implementation
+
+Security audit and documentation
+
+## Contact
+
+Email: pava51030@gmail.com
+Telegram: td_at
+Twitter/X: @pavavalera
+
+
+   
