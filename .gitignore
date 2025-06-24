@@ -18,3 +18,7 @@ build/
 # IDEs
 .vscode/
 .idea/
+# Ignore frontend build and dependencies
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
