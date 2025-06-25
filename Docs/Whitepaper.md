@@ -1,49 +1,66 @@
 
----
-
-# 2. whitepaper.md 
-
-```markdown
-# DeSciBase Whitepaper 
+# DeSciBase Whitepaper
 
 ## Introduction
 
-DeSciBase aims to revolutionize scientific publishing by providing a decentralized, censorship-resistant platform built on blockchain and IPFS technologies. Our system ensures immutability, transparency, and community-driven governance.
+**DeSciBase** is a decentralized platform for publishing, storing, and evaluating scientific research. By leveraging blockchain and IPFS/Filecoin, it provides an open, censorship-resistant alternative to traditional academic publishing — with built-in incentives and community governance.
 
 ## Problem Statement
 
-Traditional scientific publishing is centralized, often costly, and subject to censorship or manipulation. Data immutability and open access remain challenges.
+Traditional scientific publishing is centralized, expensive, and subject to gatekeeping or censorship. Open access and data immutability remain largely unsolved, especially in legacy systems controlled by a few major publishers. Researchers also lack transparency, fast feedback loops, and global visibility.
 
 ## Solution Overview
 
-DeSciBase enables authors to publish papers as immutable records on the blockchain, with PDF files stored on IPFS. Community members can interact via likes, comments, and participate in decentralized governance through a native token.
+DeSciBase offers:
+
+- Immutable publication of research papers using blockchain
+- IPFS/Filecoin for decentralized file storage
+- Like-based social signaling to surface impactful research
+- On-chain comment system and discussion layer (planned)
+- DAO-based governance for community moderation and funding
 
 ## Architecture
 
-- **Blockchain:** Smart contracts for publication management, likes, and governance  
-- **IPFS:** Distributed storage of research papers  
-- **Frontend:** User interface for publication, browsing, and interaction  
-- **DAO:** Token-based governance system for platform decisions
+- **Blockchain:** Smart contracts to handle paper submissions, likes, and governance
+- **IPFS/Filecoin:** Persistent storage of PDF publications
+- **Frontend:** Web3-enabled React app (wallet auth, upload, browse)
+- **DAO:** Token-based voting and community moderation system
 
 ## Tokenomics
 
-- Token: $DSB (DeSciBase Token)  
-- Incentives for authors, reviewers, and active community members  
-- Token utility: publishing fees, voting rights, premium features access
+- **Token:** $DSB (DeSciBase Token) — to be launched in governance phase
+- **Utilities:**
+  - Voting on DAO proposals
+  - Rewarding active users, moderators, and early authors
+  - Optional access to featured visibility and analytics
+- **Distribution (tentative):**
+  - Community & Contributors: 60%
+  - Reserve & Treasury: 20%
+  - Grants & Ecosystem: 10%
+  - Team: 10%
 
 ## Roadmap
 
-| Phase               | Description                         | Timeline |
-|---------------------|-----------------------------------|----------|
-| MVP Development     | Smart contracts, basic frontend   | Month 1  |
-| IPFS Integration     | Automated file upload and pinning | Month 2  |
-| Community Features   | Comments, moderation tools        | Month 3  |
-| DAO & Token Launch   | Governance implementation         | Month 4  |
-| Security Audit       | External review and fixes         | Month 5  |
+| Phase               | Deliverables                          | Timeline |
+|---------------------|----------------------------------------|----------|
+| Phase 1: MVP        | Contracts, likes, IPFS upload          | Month 1  |
+| Phase 2: IPFS Tools | File upload + pinning via Pinata       | Month 2  |
+| Phase 3: Community  | Comments, moderation, user profiles    | Month 3  |
+| Phase 4: DAO        | Token launch, DAO voting, proposals    | Month 4  |
+| Phase 5: Audit      | Security audit, documentation          | Month 5  |
 
 ## Team & Contact
 
-- Project Lead: [Your Name]  
-- Contact Email: pava51030@gmail.com  
-- Telegram: td_at  
-- Twitter/X: @pavavalera
+**Valera Pava** — Founder & Blockchain Engineer  
+**Mikhail Vorobyov** — Security Researcher / Technical Writer  
+**Maxim Turchak** — Full-Stack Web3 Developer  
+**Vladislava Pava** — UI/UX Designer & Artist  
+**Additional roles planned:** Scientific advisor, CosmWasm/Sei engineer, translator/outreach coordinator
+
+📩 Email: pava51030@gmail.com  
+Telegram: @td_at  
+Twitter/X: [@pavavalera](https://twitter.com/pavavalera)
+
+## License
+
+DeSciBase will be open source under the MIT License.
