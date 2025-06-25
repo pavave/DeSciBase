@@ -5,53 +5,55 @@ Our goal is to create an open, censorship-resistant, and community-driven ecosys
 
 ---
 
+## 🧬 Vision
+
+DeSciBase is an open and censorship-resistant scientific registry governed by its community. Our goal is to ensure science remains accessible, verifiable, and free from centralized control.
+
+---
+
 ## ✨ Features
 
 - 📄 Decentralized publication of scientific papers
 - 📦 IPFS integration for file storage
 - 👍 Social features: likes and (planned) comments
 - 🪙 Token-based incentives and governance (planned)
-- 🔐 Web3 wallet integration for authentication and transactions
+- Web3 login (Metamask, Keplr, Sui, Aptos)
 
 ---
 
-## 🧱 Tech Stack
+## 🚀 Next Up
 
-- 🔗 Smart Contracts (Solidity or Move / Pharos chain)
-- ⚛️ React + Vite frontend (`/frontend`)
-- 📁 IPFS via Pinata for file storage
-- 🔌 ethers.js for blockchain interaction
+- Integration with Crossref, arXiv, Zenodo
+- DOI linking and decentralized citation analytics
+- Hybrid moderation → DAO using Token Curated Registries
+- Institutional pilot + multichain expansion
 
 ---
 
-## 🚀 How to Run
+## 📄 Grant Proposals
 
-1. Clone the repository
-2. Create a `.env` file with:
-   - contract address
-   - Pinata API keys
-3. Install dependencies:
-   ```bash
-   npm install
+- [Universal Grant Proposal](./grant-proposal-universal.md)  
+- [Sei-Specific Grant Proposal](./grant-proposal-sei.md)
 
-4. Run frontend:
-   ```bash
-   npm run dev
-5. Open http://localhost:5173 in your browser
-   
-## 🛣️ Roadmap
+---
 
-✅ MVP smart contracts for publishing and liking papers
+## 🗺 Roadmap
 
-🚧 Frontend with IPFS upload and wallet integration
+| Quarter | Milestone |
+|---------|-----------|
+| Q2 2025 | MVP: Contracts, frontend, likes, IPFS upload |
+| Q3 2025 | DOI integration, metadata parsing, Zenodo/arXiv |
+| Q4 2025 | DAO moderation, citation reputation |
+| Q1 2026 | University pilot, multichain scaling |
 
-🔜 On-chain comments and moderation tools
+---
 
-🔜 DAO governance and tokenomics
+## 🔧 Tech Stack
 
-🔒 Security audit and documentation
-
-
+- React + Vite frontend  
+- Solidity / Move / CosmWasm smart contracts  
+- IPFS + Filecoin for file storage  
+- ethers.js + CosmJS + wallet adapters
 
 ## 📬 Contact
 
