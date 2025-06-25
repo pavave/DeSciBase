@@ -49,31 +49,48 @@ DeSciBase is a decentralized platform for publishing, storing, and evaluating sc
   👥 Team
 Valera Pava
 Founder & Blockchain Engineer
+
 Focus: Solidity, Move, Web3 architecture
+
 Telegram: @td_at | Twitter/X: @pavavalera
+
 GitHub: pavave
+
+Location: Ukraine
 
 Mikhail Vorobyov
 CTF Creator, Security Researcher & Content Lead
+
 Focus: Smart contract security, education, technical documentation
+
+Location: Ukraine
 
 Maxim Turchak
 Full-Stack Web3 Developer
+
 Focus: React, ethers.js, Vite, IPFS integrations
+
+Location: Ukraine
 
 Vladislava Pava
 UI/UX Designer & NFT Artist
+
 Focus: Clean interfaces for Web3, user flow design
 
+Location: Ukraine
+
 Soon: Community Manager / SMM
+
 Focus: Social media strategy, user onboarding, Web3 growth
 
 Planned Roles:
+
 Scientific Advisor: to guide academic integrations (arXiv, Crossref) and ensure research credibility
 
 CosmWasm/Sei Engineer: to support smart contract deployment and optimization on Sei
 
 Translator & Outreach Coordinator: to localize content, communicate with global institutions, and support grant applications
+
 
 ## Links
 
