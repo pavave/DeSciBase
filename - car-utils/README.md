@@ -1,34 +1,38 @@
-📦 DeSciBase CAR Generator
-This utility generates IPFS .car archives from scientific articles in PDF format, along with metadata in JSON. These archives can be stored on IPFS or downloaded locally as verifiable proofs of publication authenticity.
+# 📦 DeSciBase CAR Generator
 
-⚙️ Features
-- Generates .car files from:
-- Scientific article (PDF)
-- Associated metadata (JSON)
-- IPFS CID-structured output
-- Compatible with Pinata and Web3.Storage
-- Command-line ready
+This module allows you to generate IPFS `.car` (Content Addressed Archive) files from scientific publications in PDF format, along with structured metadata in JSON. These archives can be stored on IPFS or downloaded locally as verifiable, immutable records of publication.
 
-📁 Folder Structure
-car-utils/
-├── generateCar.js
-├── metadata.schema.json
-├── example-output/
-│   └── sample.car
-├── README.md
+---
 
+## ⚙️ Features
 
+- Convert PDF + metadata into a single `.car` archive  
+- Compatible with [ipfs-car](https://github.com/web3-storage/ipfs-car)  
+- Ready for integration with Pinata or Web3.Storage  
+- CLI support for quick usage  
+- JSON schema for consistent metadata formatting
 
-🚀 Installation
-npm install ipfs-car
+---
 
+## 🛠️ Installation
 
+```bash
+npm install ipfs-car minimist
+```
 
-📄 Usage Example
+---
+
+## 🚀 Usage
+
+Via CLI:
+
+```bash
 node generateCar.js --pdf ./input/article.pdf --meta ./input/metadata.json --out ./output/article.car
+```
 
-
-Or in Node.js:
+Or inside Node.js:
+
+```js
 import { pack } from 'ipfs-car/pack'
 const { car } = await pack({
   input: [
@@ -37,10 +41,13 @@ const { car } = await pack({
   ]
 })
 fs.writeFileSync('article.car', car)
+```
 
+---
 
+## 🧠 `metadata.json` Format
 
-🧠 metadata.json Format
+```json
 {
   "title": "Quantum Effects in Blockchain Networks",
   "authors": ["Alice Doe", "Bob Smith"],
@@ -48,18 +55,34 @@ fs.writeFileSync('article.car', car)
   "created": "2025-06-30T12:00:00Z",
   "cid": "Qm... (CID of article.pdf)"
 }
+```
 
+See `metadata.schema.json` for validation rules.
 
-Refer to metadata.schema.json for full structure.
+---
 
-✅ Output
-- .car archive ready for IPFS storage or local backup
-- CID of files can be anchored on-chain or stored in DeSciBase DB
-- Enables authenticity checks and long-term immutability
+## 📁 Folder Contents
 
-📌 Use Cases
-- Archiving scientific papers with verifiable integrity
-- Proving authorship and publication timestamp
-- Submitting to IPFS Utility Grants
+```
+car-utils/
+├── generateCar.js             # CLI tool for generating CAR files
+├── metadata.schema.json       # JSON schema for publication metadata
+├── example-output/            # (Optional) sample generated CAR files
+└── README.md                  # This file
+```
 
-Let me know if you'd like to pair this with the actual generateCar.js file — I can prep it next.
+---
+
+## ✅ Output
+
+- A `.car` archive bundling the publication and metadata  
+- IPFS-compatible structure with content-addressed CID  
+- Verifiable proof of authorship and immutability
+
+---
+
+## 📌 Use Cases
+
+- Decentralized archival of scientific papers  
+- Proof-of-publication with verifiable CIDs  
+- IPFS Utility Grant deliverables
