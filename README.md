@@ -55,6 +55,10 @@ DeSciBase is an open and censorship-resistant scientific registry governed by it
 - IPFS + Filecoin for file storage  
 - ethers.js + CosmJS + wallet adapters
 
+## 🧰 CAR Archive Utility
+
+The [`car-utils/`](./car-utils/README.md) module provides tools to generate IPFS `.car` archives from scientific publications, enabling verifiable and immutable storage of research data.
+
 ## 📬 Contact
 
 📧 Email: pava51030@gmail.com
