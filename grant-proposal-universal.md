@@ -75,6 +75,11 @@ Location: Ukraine
 Vladislava Pava
 UI/UX Designer & NFT Artist
 
+Bohdan Shpyha 
+Scientific Advisor
+
+Focus: to guide academic integrations (arXiv, Crossref) and ensure research credibility
+
 Focus: Clean interfaces for Web3, user flow design
 
 Location: Ukraine
