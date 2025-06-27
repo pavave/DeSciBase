@@ -55,6 +55,7 @@ DeSciBase offers:
 **Mikhail Vorobyov** — Security Researcher / Technical Writer  
 **Maxim Turchak** — Full-Stack Web3 Developer  
 **Vladislava Pava** — UI/UX Designer & Artist  
+**Bogdan Shpyha** - Scientific advisor
 **Additional roles planned:** Scientific advisor, CosmWasm/Sei engineer, translator/outreach coordinator
 
 📩 Email: pava51030@gmail.com  
