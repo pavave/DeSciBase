@@ -49,7 +49,7 @@ This allows us to go beyond smart contracts by embedding governance, reputation 
 
 ## 📄 Grant Proposals
 
-- [Universal Grant Proposal](./grant-proposal-universal.md)  
+- [Universal Grant Proposal](./grants/grant-proposal-universal.md)  
 
 ---
 
