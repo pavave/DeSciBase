@@ -11,6 +11,23 @@ DeSciBase is an open and censorship-resistant scientific registry governed by it
 
 ---
 
+## ⚛️ Saga Chainlet Migration
+
+As part of our long-term decentralization strategy, DeSciBase is migrating toward a dedicated Saga-based appchain (chainlet).  
+This allows us to go beyond smart contracts by embedding governance, reputation scoring, and publication logic directly into the blockchain runtime.
+
+🏗️ In-progress architecture includes:
+- `desciToken`: native utility token module
+- `reputation`: scoring system tied to peer review, publishing, and moderation
+- `dao`: weighted governance logic based on tokens + reputation
+- `ipfs`: CAR file registry for immutable storage of scientific publications
+
+🛠️ Chainlet source and roadmap: [`/saga`](./saga)
+
+📍 Status: Early-stage. Modules and genesis config are being drafted as part of our Saga grant preparation.
+
+---
+
 ## ✨ Features
 
 - 📄 Decentralized publication of scientific papers
@@ -51,9 +68,10 @@ DeSciBase is an open and censorship-resistant scientific registry governed by it
 ## 🔧 Tech Stack
 
 - React + Vite frontend  
-- Solidity / Move / CosmWasm smart contracts  
-- IPFS + Filecoin for file storage  
-- ethers.js + CosmJS + wallet adapters
+- Cosmos SDK + Saga runtime (chainlet modules in Rust/Go)  
+- IPFS + Filecoin for decentralized file storage  
+- ethers.js + CosmJS for Web3 wallet integration  
+- Saga Devnet + custom chainlet RPC  
 
 ## 🧰 CAR Archive Utility
 
