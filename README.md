@@ -50,7 +50,6 @@ This allows us to go beyond smart contracts by embedding governance, reputation 
 ## 📄 Grant Proposals
 
 - [Universal Grant Proposal](./grant-proposal-universal.md)  
-- [Sei-Specific Grant Proposal](./grant-proposal-sei.md)
 
 ---
 
