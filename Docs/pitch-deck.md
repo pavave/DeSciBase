@@ -1,13 +1,13 @@
+# 🧠 DeSciBase — Decentralized Science Chainlet
 
-# 🧠 DeSciBase
-
-**DeSciBase** is a decentralized science publishing protocol that empowers researchers to publish, share, and monetize their work via blockchain and IPFS — governed by the community through $DSB and DAO.
+**DeSciBase** is a decentralized publishing protocol for scientific research, powered by blockchain, IPFS, and its own modular appchain built with Saga.  
+Researchers can publish, share, and monetize their work in a censorship-resistant, community-governed ecosystem using $DSB and DAO logic.
 
 ---
 
 ## 🔹 Vision
 
-To create an open, censorship-resistant and decentralized repository of scientific knowledge, free from gatekeepers, powered by token incentives and democratic governance.
+To create an open and verifiable repository of scientific knowledge, free from centralized control — governed transparently by its own chainlet logic and token incentives.
 
 ---
 
@@ -17,18 +17,34 @@ Traditional scientific publishing is:
 
 * Expensive and centralized  
 * Opaque and slow  
-* Difficult to access for the global public
+* Controlled by legacy institutions  
+* Lacks transparency and incentives for authors
 
 ---
 
 ## ✅ Solution
 
-A decentralized protocol where:
+DeSciBase solves this via:
 
-* Researchers upload papers via IPFS  
-* Pay small fee in $DSB to publish  
-* Community curates and rewards content via likes and comments  
-* All content is public, immutable and reputation-based
+* IPFS-based research storage and CAR file archiving  
+* Native chainlet with modules for token, reputation, and DAO  
+* On-chain publication tracking and governance  
+* Reputation system for contributors and peer reviewers  
+* $DSB token used for actions, curation, and voting
+
+---
+
+## ⚛️ Chainlet Migration
+
+DeSciBase is building its own Saga chainlet:
+
+* Custom Cosmos-SDK runtime with modular governance  
+* desciToken (staking + utility)  
+* Reputation module (non-transferable scoring)  
+* DAO module with weighted voting  
+* IPFS module for CAR file hash registration
+
+See: [`/saga`](https://github.com/pavave/DeSciBase/tree/main/saga)
 
 ---
 
@@ -44,58 +60,59 @@ A decentralized protocol where:
 
 Uses:
 
-* Publish research (10 $DSB per paper)  
-* Vote in DAO  
-* Unlock premium access  
-* Earn via engagement and curation
+* Publish papers (~10 $DSB per upload)  
+* Vote in DAO proposals and chain upgrades  
+* Earn via curation, moderation, and reviews  
+* Reputation-weighted access and privileges
 
 ---
 
 ## 🧠 DAO Strategy
 
-* Governance through $DSB token  
-* On-chain or Snapshot voting  
-* Proposals require 10k DSB or NFT badge  
-* DAO manages treasury and early grants to authors
+* Voting via on-chain DAO module (Saga chainlet)  
+* Weighted governance (DSB + reputation score)  
+* NFT badge or token threshold for proposal rights  
+* Treasury managed by DAO via native logic
 
 ---
 
 ## 📊 Market
 
-DeSci and decentralized knowledge protocols are growing:
+Scientific publishing is a $30B+ global industry:
 
-* $30B+/year academic publishing industry  
-* PhDs, students, indie researchers need alternatives  
-* Ideal for DAO and token-based incentive models
+* PhDs, universities, indie researchers seek open access  
+* DAO-curated, IPFS-native platforms offer transparency  
+* Ideal for on-chain incentives and modular governance
 
 ---
 
 ## 🧪 MVP Features
 
-* Submit papers (IPFS + contract)  
-* Like/vote (on-chain or signed)  
-* Personal profile (My Works, My Likes)  
-* Community feed (New, Top, Most Liked)  
-* Wallet login + $DSB payment system
+* IPFS CAR archive generator  
+* Submit papers with reputation metadata  
+* DAO proposal voting (native module)  
+* User dashboard: profile, papers, votes  
+* Chainlet integration status + node sync
 
 ---
 
-## 💡 Roadmap (Q3–Q4 2025)
+## 💡 Roadmap (Q3–Q1 2025/26)
 
-* ✅ MVP: IPFS + frontend + contract (Q3)  
-* 🔄 DAO: Launch $DSB + voting system (Q4)  
-* 🌐 Community: Author onboarding & grant pool  
-* 📱 Mobile dApp & decentralized identity (Q4–Q1)
+* ✅ MVP: Contracts, IPFS tools, frontend (Q3)  
+* 🛠️ Saga Chainlet Setup: Genesis + modules (Q4)  
+* 🔄 DAO Governance Launch: Reputation + voting UX  
+* 🌐 Community Grants: Authors, researchers, validators  
+* 📱 Multichain bridge + mobile dApp (Q1)
 
 ---
 
 ## 🤩 Tech Stack
 
-* IPFS / Web3.Storage  
-* Solidity / Pharos Chain  
-* React + Tailwind (frontend)  
-* DAO via Snapshot or on-chain module  
-* $DSB ERC-20 token
+* IPFS / Filecoin / CAR utils  
+* Cosmos SDK + Saga chainlet (Rust/Go)  
+* React + Vite + Tailwind frontend  
+* Web3 wallet integration (Keplr, Sui, Aptos, Metamask)  
+* Custom modules: token, reputation, dao, ipfs
 
 ---
 
@@ -108,29 +125,18 @@ DeSci and decentralized knowledge protocols are growing:
 
 ---
 
-🏁 Grant Request
-Requested: $400,000
-Use of Funds:
+🏁 **Grant Request**
 
-🔧 Development & Engineering: $150,000
-Full-stack, smart contract, infrastructure & maintenance (5–7 devs)
+Requested: **$400,000**
 
-🔐 Security Audit & Testing: $30,000
-Audit of smart contracts, frontend security, attack simulations
+**Use of Funds:**
 
-🧠 Scientific & Community Grants: $70,000
-Author incentives, scientific advisor payments, partnerships with universities and institutions
+🔧 Dev & Engineering: $150,000 — chainlet modules, IPFS tools, backend/core  
+🔐 Audit & Testing: $30,000 — security audit, testnet deployment  
+🧠 Author Grants: $70,000 — onboarding researchers, peer-review incentives  
+📢 Outreach: $50,000 — DeSci campaign, hackathons, partnerships  
+🏛️ DAO Governance Tools: $50,000 — tokenomics UX, voting UI, Saga infra  
+🖥️ Infra & Hardware: $30,000 — IPFS nodes, validator setup, equipment  
+🧾 Reserve: $20,000 — operations, contingency, admin
 
-📢 Marketing & Outreach: $50,000
-Global DeSci campaign, academic hackathons, onboarding researchers
-
-🏛️ DAO Launch & Governance: $50,000
-DAO tools, tokenomics implementation, voting infra
-
-🖥️ Hardware & Infrastructure: $30,000
-Equipment upgrades for team (10-year-old machines), IPFS nodes, storage, hosting
-
-🧾 Operational Reserve: $20,000
-Unexpected costs, extended runway, admin
-
-
+---
