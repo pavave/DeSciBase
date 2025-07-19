@@ -1,1 +1,24 @@
-
+{
+  "chain_id": "desci-chainlet",
+  "genesis_time": "2025-07-20T00:00:00Z",
+  "app_state": {
+    "bank": {
+      "balances": [
+        {
+          "address": "saga1valeraexampleaddr",
+          "coins": [
+            {
+              "denom": "desciToken",
+              "amount": "100000000"
+            }
+          ]
+        }
+      ]
+    },
+    "staking": {
+      "params": {
+        "bond_denom": "desciToken"
+      }
+    }
+  }
+}
