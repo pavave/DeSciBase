@@ -77,7 +77,7 @@ Chainlet source and roadmap: [`/saga`](https://github.com/pavave/DeSciBase/tree/
 
 📩 Email: pava51030@gmail.com  
 Telegram: @td_at  
-Twitter/X: [@pavavalera](https://twitter.com/pavavalera)
+Twitter/X: [@_decsibase](https://twitter.com/_descibase)
 
 ## License
 
