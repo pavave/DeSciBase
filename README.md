@@ -82,7 +82,7 @@ The [`car-utils/`](./car-utils/README.md) module provides tools to generate IPFS
 
 💬 Telegram: @td_at
 
-🐦 X / Twitter: @pavavalera
+🐦 X / Twitter: @_descibase
 
 
    
