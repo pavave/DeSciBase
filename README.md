@@ -11,39 +11,32 @@ DeSciBase is an open and censorship-resistant scientific registry governed by it
 
 ---
 
-## ⚛️ Saga Chainlet Migration
+## ⚛️ Architecture & Migration Status
 
-As part of our long-term decentralization strategy, DeSciBase is migrating toward a dedicated Saga-based appchain (chainlet).  
-This allows us to go beyond smart contracts by embedding governance, reputation scoring, and publication logic directly into the blockchain runtime.
+Originally, DeSciBase was designed around a dedicated Saga-based appchain (chainlet), embedding governance, reputation scoring, and publication logic directly into the blockchain runtime.
 
-🏗️ In-progress architecture includes:
-- `desciToken`: native utility token module
-- `reputation`: scoring system tied to peer review, publishing, and moderation
-- `dao`: weighted governance logic based on tokens + reputation
-- `ipfs`: CAR file registry for immutable storage of scientific publications
+This Saga implementation is **archived** and available for reference in the [`saga-legacy`](https://github.com/pavave/DeSciBase/tree/saga-legacy) branch.
 
-🛠️ Chainlet source and roadmap: [`/saga`](./saga)
-
-📍 Status: Early-stage. Modules and genesis config are being drafted as part of our Saga grant preparation.
+Currently, DeSciBase is migrating toward an **EVM-compatible smart contract architecture** deployed on the Holesky testnet. This migration focuses on leveraging Solidity smart contracts for tokenomics, DAO governance, and publication registries, alongside IPFS for decentralized storage.
 
 ---
 
 ## ✨ Features
 
-- 📄 Decentralized publication of scientific papers
-- 📦 IPFS integration for file storage
-- 👍 Social features: likes and (planned) comments
-- 🪙 Token-based incentives and governance (planned)
-- Web3 login (Metamask, Keplr, Sui, Aptos)
+- 📄 Decentralized publication of scientific papers  
+- 📦 IPFS integration for file storage  
+- 👍 Social features: likes and planned comments  
+- 🪙 Token-based incentives and governance via EVM contracts  
+- Web3 login (MetaMask, Keplr, Sui, Aptos)
 
 ---
 
-## 🚀 Next Up
+## 🚀 Upcoming Developments
 
-- Integration with Crossref, arXiv, Zenodo
-- DOI linking and decentralized citation analytics
-- Hybrid moderation → DAO using Token Curated Registries
-- Institutional pilot + multichain expansion
+- Integration with Crossref, arXiv, and Zenodo metadata services  
+- DOI linking and decentralized citation analytics  
+- DAO moderation with Token Curated Registries (TCRs)  
+- Institutional pilots and multichain scaling
 
 ---
 
@@ -55,26 +48,30 @@ This allows us to go beyond smart contracts by embedding governance, reputation 
 
 ## 🗺 Roadmap
 
-| Quarter | Milestone |
-|---------|-----------|
-| Q2 2025 | MVP: Contracts, frontend, likes, IPFS upload |
+| Quarter | Milestone                                     |
+|---------|-----------------------------------------------|
+| Q2 2025 | MVP: Smart contracts, frontend, likes, IPFS upload |
 | Q3 2025 | DOI integration, metadata parsing, Zenodo/arXiv |
-| Q4 2025 | DAO moderation, citation reputation |
-| Q1 2026 | University pilot, multichain scaling |
+| Q4 2025 | DAO moderation, citation reputation           |
+| Q1 2026 | University pilot, multichain scaling          |
 
 ---
 
 ## 🔧 Tech Stack
 
 - React + Vite frontend  
-- Cosmos SDK + Saga runtime (chainlet modules in Rust/Go)  
+- Solidity smart contracts on EVM-compatible networks (Holesky testnet)  
 - IPFS + Filecoin for decentralized file storage  
 - ethers.js + CosmJS for Web3 wallet integration  
-- Saga Devnet + custom chainlet RPC  
+- Web3 wallets: MetaMask, Keplr, Sui, Aptos  
+
+---
 
 ## 🧰 CAR Archive Utility
 
 The [`car-utils/`](./car-utils/README.md) module provides tools to generate IPFS `.car` archives from scientific publications, enabling verifiable and immutable storage of research data.
+
+---
 
 ## 📬 Contact
 
@@ -83,6 +80,3 @@ The [`car-utils/`](./car-utils/README.md) module provides tools to generate IPFS
 💬 Telegram: @td_at
 
 🐦 X / Twitter: @_descibase
-
-
-   
