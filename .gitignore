@@ -1,24 +1,41 @@
-# dependencies
+# ───────────────
+# Node.js / NPM
+# ───────────────
 node_modules/
 .pnpm/
 dist/
-
-# testing
-coverage/
-
-# production
 build/
 
-# misc
-.DS_Store
+# ───────────────
+# Hardhat / Testing
+# ───────────────
+coverage/
+cache/
+artifacts/
+
+# ───────────────
+# Env & Logs
+# ───────────────
 .env
 .env.local
+.env.*
 *.log
 
-# IDEs
+# ───────────────
+# OS / Misc
+# ───────────────
+.DS_Store
+
+# ───────────────
+# Editors / IDEs
+# ───────────────
 .vscode/
 .idea/
-# Ignore frontend build and dependencies
+
+# ───────────────
+# Frontend (if exists)
+# ───────────────
 /frontend/node_modules/
 /frontend/dist/
 /frontend/build/
+
