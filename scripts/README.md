@@ -2,7 +2,7 @@
 
 ### 🧪 Register Example Publication
 
-После деплоя смарт-контракта ты можешь выполнить скрипт для регистрации публикации или тестовых данных:
+After deploying the smart contract, you can run the script to register the publication or test data:
 
 ```bash
 npx hardhat run scripts/register.js --network holesky
