@@ -1,13 +1,13 @@
-# 🧠 DeSciBase — Decentralized Science Chainlet
+# 🧠 DeSciBase — Decentralized Science Chainlet (Legacy) and EVM Migration
 
-**DeSciBase** is a decentralized publishing protocol for scientific research, powered by blockchain, IPFS, and its own modular appchain built with Saga.  
-Researchers can publish, share, and monetize their work in a censorship-resistant, community-governed ecosystem using $DSB and DAO logic.
+**DeSciBase** is a decentralized publishing protocol for scientific research, originally powered by Saga — a modular appchain built on Cosmos SDK.  
+Currently, DeSciBase is migrating to Ethereum-compatible smart contracts deployed on the Holesky testnet, while the Saga implementation is archived for future reference.
 
 ---
 
 ## 🔹 Vision
 
-To create an open and verifiable repository of scientific knowledge, free from centralized control — governed transparently by its own chainlet logic and token incentives.
+To build an open, verifiable repository of scientific knowledge, free from centralized control — transparently governed by its native chainlet logic and token incentives.
 
 ---
 
@@ -15,36 +15,37 @@ To create an open and verifiable repository of scientific knowledge, free from c
 
 Traditional scientific publishing is:
 
-* Expensive and centralized  
-* Opaque and slow  
-* Controlled by legacy institutions  
-* Lacks transparency and incentives for authors
+- Expensive and centralized  
+- Opaque and slow  
+- Controlled by legacy institutions  
+- Lacking transparency and incentives for authors
 
 ---
 
 ## ✅ Solution
 
-DeSciBase solves this via:
+DeSciBase addresses these challenges by providing:
 
-* IPFS-based research storage and CAR file archiving  
-* Native chainlet with modules for token, reputation, and DAO  
-* On-chain publication tracking and governance  
-* Reputation system for contributors and peer reviewers  
-* $DSB token used for actions, curation, and voting
+- IPFS-based research storage and CAR file archiving  
+- A native Saga chainlet (archived) with modules for tokenomics, reputation, and DAO governance  
+- Solidity-based smart contracts deployed on EVM-compatible Holesky testnet  
+- On-chain publication tracking and community governance  
+- Reputation system rewarding contributors and peer reviewers  
+- The $DSB token for platform actions, curation, and voting
 
 ---
 
-## ⚛️ Chainlet Migration
+## ⚛️ Saga Chainlet (Archived)
 
-DeSciBase is building its own Saga chainlet:
+The original implementation included:
 
-* Custom Cosmos-SDK runtime with modular governance  
-* desciToken (staking + utility)  
-* Reputation module (non-transferable scoring)  
-* DAO module with weighted voting  
-* IPFS module for CAR file hash registration
+- Custom Cosmos SDK runtime with modular governance  
+- `desciToken` module (staking and utility)  
+- Reputation module (non-transferable scoring)  
+- DAO module with weighted voting mechanisms  
+- IPFS module for registering CAR file hashes
 
-See: [`/saga`](https://github.com/pavave/DeSciBase/tree/main/saga)
+This Saga chainlet codebase is **archived** in the [`saga-legacy`](https://github.com/pavave/DeSciBase/tree/saga-legacy) branch.
 
 ---
 
@@ -58,21 +59,21 @@ See: [`/saga`](https://github.com/pavave/DeSciBase/tree/main/saga)
 | Grants & Partners   | 10% | 10,000,000 |
 | Liquidity & Staking | 10% | 10,000,000 |
 
-Uses:
+Token utility includes:
 
-* Publish papers (~10 $DSB per upload)  
-* Vote in DAO proposals and chain upgrades  
-* Earn via curation, moderation, and reviews  
-* Reputation-weighted access and privileges
+- Publishing papers (~10 $DSB per upload)  
+- Voting in DAO proposals and chain upgrades  
+- Earning rewards through curation, moderation, and peer reviews  
+- Reputation-weighted access and privileges
 
 ---
 
 ## 🧠 DAO Strategy
 
-* Voting via on-chain DAO module (Saga chainlet)  
-* Weighted governance (DSB + reputation score)  
-* NFT badge or token threshold for proposal rights  
-* Treasury managed by DAO via native logic
+- Governance via an on-chain DAO module on the Saga chainlet (archived)  
+- Weighted voting based on $DSB holdings and reputation scores  
+- NFT badges or token thresholds required for proposal creation  
+- DAO treasury management through native chainlet logic
 
 ---
 
@@ -80,63 +81,64 @@ Uses:
 
 Scientific publishing is a $30B+ global industry:
 
-* PhDs, universities, indie researchers seek open access  
-* DAO-curated, IPFS-native platforms offer transparency  
-* Ideal for on-chain incentives and modular governance
+- PhDs, universities, and independent researchers seek open access solutions  
+- DAO-curated, IPFS-native platforms provide transparency and decentralization  
+- The sector is ideal for on-chain incentives and modular governance frameworks
 
 ---
 
 ## 🧪 MVP Features
 
-* IPFS CAR archive generator  
-* Submit papers with reputation metadata  
-* DAO proposal voting (native module)  
-* User dashboard: profile, papers, votes  
-* Chainlet integration status + node sync
+- IPFS CAR archive generator  
+- Submission of papers with embedded reputation metadata  
+- DAO proposal voting via native chainlet modules (archived)  
+- User dashboard showcasing profiles, publications, and voting history  
+- Chainlet node sync and integration monitoring tools
 
 ---
 
-## 💡 Roadmap (Q3–Q1 2025/26)
+## 💡 Roadmap (Q3 2025 – Q1 2026)
 
-* ✅ MVP: Contracts, IPFS tools, frontend (Q3)  
-* 🛠️ Saga Chainlet Setup: Genesis + modules (Q4)  
-* 🔄 DAO Governance Launch: Reputation + voting UX  
-* 🌐 Community Grants: Authors, researchers, validators  
-* 📱 Multichain bridge + mobile dApp (Q1)
+- ✅ MVP: Smart contracts, IPFS tools, and frontend (Q3)  
+- 🛠️ Saga Chainlet setup (archived): Genesis configuration and core modules (Q4)  
+- 🔄 DAO Governance launch: Reputation system and voting UX  
+- 🌐 Community grants for authors, researchers, and validators  
+- 📱 Multichain bridge and mobile dApp (Q1)
 
 ---
 
 ## 🤩 Tech Stack
 
-* IPFS / Filecoin / CAR utils  
-* Cosmos SDK + Saga chainlet (Rust/Go)  
-* React + Vite + Tailwind frontend  
-* Web3 wallet integration (Keplr, Sui, Aptos, Metamask)  
-* Custom modules: token, reputation, dao, ipfs
+- IPFS / Filecoin and CAR utilities  
+- Cosmos SDK and Saga chainlet (Rust/Go) — archived  
+- Solidity smart contracts on Holesky testnet  
+- React + Vite + Tailwind CSS frontend  
+- Web3 wallet integrations (Keplr, Sui, Aptos, Metamask)  
+- Custom chainlet modules: token, reputation, DAO, IPFS
 
 ---
 
 ## 📬 Contact
 
-* GitHub: [github.com/pavave/descibase](https://github.com/pavave/descibase)  
-* Email: [pava51030@gmail.com](mailto:pava51030@gmail.com)  
-* Telegram: [td_at](https://t.me/td_at)  
-* X / Twitter: [@pavavalera](https://x.com/pavavalera)
+- GitHub: [github.com/pavave/descibase](https://github.com/pavave/DeSciBase)  
+- Email: [pava51030@gmail.com](mailto:pava51030@gmail.com)  
+- Telegram: [@td_at](https://t.me/td_at)  
+- X / Twitter: [@pavavalera](https://x.com/_descibase)
 
 ---
 
-🏁 **Grant Request**
+# 🏁 Grant Request
 
-Requested: **$400,000**
+**Requested amount:** $400,000
 
-**Use of Funds:**
+### Use of Funds:
 
-🔧 Dev & Engineering: $150,000 — chainlet modules, IPFS tools, backend/core  
-🔐 Audit & Testing: $30,000 — security audit, testnet deployment  
-🧠 Author Grants: $70,000 — onboarding researchers, peer-review incentives  
-📢 Outreach: $50,000 — DeSci campaign, hackathons, partnerships  
-🏛️ DAO Governance Tools: $50,000 — tokenomics UX, voting UI, Saga infra  
-🖥️ Infra & Hardware: $30,000 — IPFS nodes, validator setup, equipment  
-🧾 Reserve: $20,000 — operations, contingency, admin
+- 🔧 Development & Engineering: $150,000 — chainlet modules, IPFS tools, backend/core  
+- 🔐 Audit & Testing: $30,000 — security audit and testnet deployment  
+- 🧠 Author Grants: $70,000 — onboarding researchers and peer-review incentives  
+- 📢 Outreach: $50,000 — DeSci campaign, hackathons, and partnerships  
+- 🏛️ DAO Governance Tools: $50,000 — tokenomics UX, voting UI, Saga infrastructure  
+- 🖥️ Infrastructure & Hardware: $30,000 — IPFS nodes, validator setup, and equipment  
+- 🧾 Reserve: $20,000 — operations, contingency, and administrative expenses
 
 ---
