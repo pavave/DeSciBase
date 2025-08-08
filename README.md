@@ -27,7 +27,7 @@ Currently, DeSciBase is migrating toward an **EVM-compatible smart contract arch
 - 📦 IPFS integration for file storage  
 - 👍 Social features: likes and planned comments  
 - 🪙 Token-based incentives and governance via EVM contracts  
-- Web3 login (MetaMask, Keplr, Sui, Aptos)
+- Web3 login (MetaMask)
 
 ---
 
