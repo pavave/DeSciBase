@@ -123,7 +123,7 @@ Scientific publishing is a $30B+ global industry:
 - GitHub: [github.com/pavave/descibase](https://github.com/pavave/DeSciBase)  
 - Email: [pava51030@gmail.com](mailto:pava51030@gmail.com)  
 - Telegram: [@td_at](https://t.me/td_at)  
-- X / Twitter: [@pavavalera](https://x.com/_descibase)
+- X / Twitter: [@_desscibase](https://x.com/_descibase)
 
 ---
 
